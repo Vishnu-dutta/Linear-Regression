@@ -20,3 +20,5 @@ c = reg.intercept_
 print(a)
 print("m=",b,"y=",c)
 plt.show()
+
+
