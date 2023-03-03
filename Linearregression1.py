@@ -13,7 +13,7 @@ plt.ylabel("year", fontsize = 10)			                # naming the y plane
 plt.scatter(df["per capita income US($)"], df.year, color= 'red', marker= '+')      #df["per capita income US($)"]
 reg = linear_model.LinearRegression()
 reg.fit(df[['year']], df["per capita income US($)"])
-plt.plot(df['per capita income US($)'], df.year , color = 'blue')
+plt.plot(df['per capita income US($)'], df.year, color = 'blue')
 a = reg.predict([[2020]])
 b = reg.coef_
 c = reg.intercept_
