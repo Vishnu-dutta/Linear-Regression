@@ -19,6 +19,6 @@ y = final["Sell Price($)"]
 reg.fit(X,y)
 
 print(final)
-print(reg.predict([[45000,0,1,4]]))     # mercedez benz that is 4 yr old with mileage 45000
-print(reg.predict([[86000,0,0,7]]))     # BMW X5 that is 7 yr old with mileage 86000
+print(reg.predict([[45000,4,0,1]]))     # mercedez benz that is 4 yr old with mileage 45000
+print(reg.predict([[86000,7,0,0]]))     # BMW X5 that is 7 yr old with mileage 86000
 print(reg.score(X,y))                   # score(accuracy of the model)
