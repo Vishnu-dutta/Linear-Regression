@@ -5,9 +5,16 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 import numpy as np
 
-# '''
-# Dummy variable using pandas
-# '''
+'''
+Label Encoding: This technique is useful for ordinal data, where there is an inherent order to the categories
+NOTE: However, for nominal data, where there is no inherent order to the categories, Label Encoding may create an 
+unintended relationship between categories that could negatively impact the performance of machine learning models.
+
+One-Hot Encoding: This technique is useful for nominal data, where there is no inherent order to the categories
+
+The purpose of both Label Encoding and One-Hot Encoding is to convert categorical data into a numerical format
+Dummy variable using pandas
+'''
 #
 df = pd.read_csv("D:\\py-master\\ML\\5_one_hot_encoding\\homeprices.csv")
 # dummies = pd.get_dummies(df.town)       # creating dummies attribute for town 3 column for 3 townships.
